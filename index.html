@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="header">
+  <div class="header__container container">
+    <div class="header__logo">
+      <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    </div>
+    <div class="header__buttons">
+      <button class="header__login" onclick="activeForm()">
+        Войти
+      </button>
+      <button onclick="openBasket()"class="header__basket">
+        <div><img src="img/basket.svg" alt="basket">
+        <div class="header__basket-itemcount">0</div>
+        </div>
+      </button>
+      <noindex>
+  <div class="basket" id="basket">
+    <div class="basket__header">
+      Корзина
+      <button class="basket__close" onclick="closeBasket()">×</button>
+    </div>
+
+    <div class="basket__list" id="basket-list">
+      
+    </div>
+    <div class="basket__buttons">
+      <div class="basket__allprice">0 ₽</div>
+      <div class="basket__itemcount basket__allprice" style="color: gray">Пусто</div>
+      <button class="basket__buy" onclick="notifBasket()">Заказать</ш>
+    </div>
+  </div>
+</noindex>
+
+ 
+    </div>
+  </div>
+</header>
+<div class="wrapper">
+<main>
+  <section class="search">
+    <div class="search__container container">
+      <input class='search__input'type="text" id="search" placeholder="Поиск по ресторанам и кухням">
+    </div>
+  </section>
+  <section class="restaurans">
+    <div class="restaurans__container container">
+      <h2 class="restaurans__header ubereats__h2">
+        Рестораны в Москве 
+      </h2>
+      <div class="restaurans__items">
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/macdonalts.png" alt="Макдоналдс — Газетный">
+          </div>
+          <div class="restauran__h3 ubereats__h3">Макдоналдс — Газетный</div>
+          <div class="restauran__desc">₽₽ • Бургеры</div>
+          <div class="restauran__time ubereats__desc">25 - 35 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/dimsum_co.png" alt="DimSum & Co — ЦДМ">
+          </div>
+          <div class="restauran__h3 ubereats__h3">DimSum & Co — ЦДМ</div>
+          <div class="restauran__desc">₽ • Японская • Китайская • Азиатская</div>
+          <div class="restauran__time ubereats__desc">40 - 50 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/dvigok.png" alt="ДвижОК — Манежная">
+          </div>
+          <div class="restauran__h3 ubereats__h3">ДвижОК — Манежная</div>
+          <div class="restauran__desc">₽ • Американская • Европейская</div>
+          <div class="restauran__time ubereats__desc">35 - 45 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/nya.png" alt="НЯ — NHA">
+          </div>
+          <div class="restauran__h3 ubereats__h3">НЯ — NHA</div>
+          <div class="restauran__desc">₽₽ • Вьетнамская</div>
+          <div class="restauran__time ubereats__desc">30 - 40 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/tochka_dzi.png" alt="Точка Дзы — Цветной">
+          </div>
+          <div class="restauran__h3 ubereats__h3">Точка Дзы — Цветной</div>
+          <div class="restauran__desc">₽₽ • Вьетнамская</div>
+          <div class="restauran__time ubereats__desc">40 - 50 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/cinnabon.png" alt="Cinnabon">
+          </div>
+          <div class="restauran__h3 ubereats__h3">Cinnabon</div>
+          <div class="restauran__desc">₽ • Выпечка • Десерты • Капкейки</div>
+          <div class="restauran__time ubereats__desc">25 - 35 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/pizzelove.png" alt="PIZZELOVE">
+          </div>
+          <div class="restauran__h3 ubereats__h3">PIZZELOVE</div>
+          <div class="restauran__desc">₽₽ • Пицца</div>
+          <div class="restauran__time ubereats__desc">15 - 25 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/zu_kafe.png" alt="Zю кафе — Тверская">
+          </div>
+          <div class="restauran__h3 ubereats__h3">Zю кафе — Тверская</div>
+          <div class="restauran__desc">₽₽ • Японская</div>
+          <div class="restauran__time ubereats__desc">25 - 35 мин</div>
+        </a>
+        <a href='restauran.html'class="restaurans__restauran">
+          <div class="restauran__img">
+            <img src="img/bar_bq_cafe.png" alt="Макдоналдс — Газетный">
+          </div>
+          <div class="restauran__h3 ubereats__h3">Bar BQ Cafe — Манежная</div>
+          <div class="restauran__desc">₽₽₽ • Европейская</div>
+          <div class="restauran__time ubereats__desc">30 - 40 мин</div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+  <noindex>
+  <div class="basket" id="basket">
+    <div class="basket__header">
+      Корзина
+      <button class="basket__close" onclick="closeBasket()">×</button>
+    </div>
+
+    <div class="basket__list" id="basket-list">
+      
+    </div>
+    <div class="basket__buttons">
+      <div class="basket__allprice">0 ₽</div>
+      <div class="basket__itemcount basket__allprice" style="color: gray">Пусто</div>
+      <button class="basket__buy" onclick="notifBasket()">Заказать</ш>
+    </div>
+  </div>
+</noindex>
+
+ 
+  <noindex style="
+display: flex;
+justify-content: center;
+">
+<div id='login-form'class="form disabled">
+  <div class="form__close" onclick="closeForm()">×</div>
+  <form action="">
+    <div class="form__header">Войти в аккаунт</div>
+    <label class="form__label" for="login-name">Ваш логин</label><input  class="form__input" type="text" id="login-name" placeholder="Inav-lavrov">
+    <label class="form__label" for="login-password">Ваш пароль</label><input class="form__input" type="password" id="login-password" placeholder="****">
+    <input class="form__submit" type="button" name="login-submit" id="login-submit" value="Войти" onclick="notifLogin()">
+  </form>
+</div>
+</noindex>
+  <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__logo">
+      <a href="index.html"><img src="img/footer-logo.svg" alt="logo"></a>
+    </div>
+    <hr>
+    <div class="footer__menu">
+      <div class="footer__left">
+        <div class="footer__language">
+        <img src="img/world.svg">
+        <select class="language__select">
+          <option selected="selected">Русский</option>
+          <option>Английский</option>
+          <option>Немецкий</option>
+        </select>
+      </div>
+      <div class="footer__hashta"><span>#</span>UberEats</div>
+      <div class="footer__social">
+        <a href="index.html"><img class='footer__social-button' src="img/facebook.svg"></a>
+        <a href="index.html"><img class='footer__social-button' src="img/twitter.svg"></a>
+        <a href="index.html"><img class='footer__social-button' src="img/instagram.svg"></a>
+      </div>
+      </div>
+      <div class="footer__nav">
+        <div>
+          <a href="index.html" class="footer__nav-link">Об UberEats</a>
+          <a href="index.html" class="footer__nav-link">Станьте партнёром по доставке</a>
+          <a href="index.html" class="footer__nav-link">Станьте парнёром-рестораном</a>
+        </div>
+        <div>
+          <a href="index.html" class="footer__nav-link">Все города</a>
+          <a href="index.html" class="footer__nav-link">Цены</a>
+          <a href="index.html" class="footer__nav-link">Помощь</a>
+          <a href="index.html" class="footer__nav-link">FAQs</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer__mobile">
+      <a href="index.html"><img class='footer__mobile-button' src="img/download_on_the_app_store_badge.svg" alt="App Store"></a>
+      <a href="index.html"><img class='footer__mobile-button' src="img/download_on_the_play_market_badge.svg" alt="Play Market"></a>
+    </div>
+    <div class="footer_bottom-nav">
+      <div class="footer__copyright">© 2017 Uber Technologies Inc.</div>
+      <a href="index.html" class="footer__bottom-link">Обработка персональных данных</a>
+      <a href="index.html" class="footer__bottom-link">Пользовательское соглашение</a>
+    </div>
+  </div>
+</footer>
+  <script src='/js/app.min.js'></script>
+</body>
+</html>
